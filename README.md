@@ -21,7 +21,7 @@ python main.py
 
 ```sh
 python build_web.py
-python -m http.server --directory public
+python -m http.server
 ```
 
-Open `http://localhost:8000/`. Vercel serves the committed `public/` directory as a static site. The browser loads the Pygbag runtime from the pygame-web CDN.
+Open `http://localhost:8000/`. Vercel serves the committed browser build from the project root. The browser loads the Pygbag runtime from the pygame-web CDN.

@@ -23,7 +23,5 @@ with TemporaryDirectory() as temp_dir:
         if not (generated / filename).is_file():
             raise FileNotFoundError(generated / filename)
 
-    public = root / 'public'
-    public.mkdir(exist_ok=True)
     for filename in files:
-        shutil.copy2(generated / filename, public / filename)
+        shutil.copy2(generated / filename, root / filename)
